@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color:#fefefd;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between; /* optional: add space between items */
+    align-items: center; /* center vertically */
+}
+.container1 a[href="/posts/create"]{
+    color: #fefefd;
+    text-decoration: underline;
+    margin-right: 20px; /* optional: add some space between link and other content */
+    /* float: right; removed float */
+    text-align: center; /* center horizontally */
+}
+/* Set the background color of the page
+body {
+    background-image: linear-gradient(to right top, #741f3e, #731749, #6f1355, #661563, #561b72);
+} */
+/* Style the container of the blogs */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Style each individual blog */
+.col-md-2 {
+    width: 24%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color:#ffffff70;
+    color: #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Style the title of each blog */
+.col-md-2 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.col-md-2 a h2 {
+    color: #000000;
+}
+/* Style the content of each blog */
+.col-md-2 p {
+    margin-bottom: 0.5rem;
+}
+/* Style the publication date of each blog */
+.col-md-2 p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #000000;
+}
+/* Style the link color */
+a {
+    color:#102542;
+}
+.col-md-3 {
+    width: 40%;
+    margin-bottom: 10%;
+    padding: 8%;
+    background-color:#ffffff70;
+    color: #000000;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Style the title of each blog */
+.col-md-3 h2 {
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 9%;
+    color: #000000;
+}
+section{
+    font-size: 30px;
+    margin-bottom: 10%;
+    font-weight: bold;
+    color: #000000;
+}
+/* Style the content of each blog */
+.col-md-3 p {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    color: #000000;
+}
+/* Style the publication date of each blog */
+.col-md-3 p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #000000;
+}
+.delete {
+    background-color: rgba(255, 0, 0, 0.737);
+    border-color: rgba(255, 0, 0, 0.781);
+    border-radius: 5px;
+}
+.delete:hover {
+    background-color: rgb(222, 59, 59);
+    border-color: rgb(222, 59, 59);
+}
+.edit {
+    background-color: rgba(49, 172, 0, 0.763);
+    border-color: rgba(49, 172, 0, 0.747);
+    border-radius: 5px;
+}
+.edit:hover{
+    background-color: rgb(51, 123, 23);
+}
+.edit a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.delete a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+fieldset {
+    margin: auto; /* center horizontally */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%; /* set the width to your liking */
+    padding: 20px;
+    border: 1px solid #dddddd5d;
+    border-radius: 5px;
+    background-color: #ffffff44;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+}
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd5b;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color: #007bff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0069d9;
+}
+.error {
+    color: #dc3545;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
